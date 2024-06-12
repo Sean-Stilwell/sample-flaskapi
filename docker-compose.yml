@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: seanstilwell/flask-app:latest
+    container_name: hello-world-flask
+    ports:
+      - "80:80"
